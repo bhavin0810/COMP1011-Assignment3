@@ -2,6 +2,7 @@
  * @author: Bhavin Patel
  * @Description: Implementation Of the TerrestrialPlanet Class with necessary properties and methods
  * @version 1.0  Feb-20-2015 Creating the TerrestrialPlanet Class with necessary Properties and methods
+ * @version 2.0 Feb-20-2015 Creating method with necessary information
  * 
  *  */
 public class TerrestrialPlanet extends Planet implements iHasMoons, iHabitable{
@@ -17,13 +18,15 @@ public class TerrestrialPlanet extends Planet implements iHasMoons, iHabitable{
 	
 	//habitable method using interface
 	public boolean habitable() {
-		return false;
+		return oxygen;
 	}
 
 	//hasMoons method using interface
 	public boolean hasMoons() {
+		if (getMoonCount() > 0) {
+			return true;
+		}
 		return false;
 	}
-
 	
 }
