@@ -71,8 +71,8 @@ public abstract class Planet {
 	//toString override method
 	@Override
 	public String toString() {
-		return "Planet [diameter=" + diameter + ", mass=" + mass + ", name="
-				+ name + "]";
+		return "Planet [Name=" + name + ", Mass=" + mass + ", Diameter="
+				+ diameter + "]";
 	}
 	
 }
